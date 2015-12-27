@@ -18,6 +18,10 @@ class App {
 		static const int WindowWidth = 1024;
 		static const int WindowHeight = 768;
 
+		Uint32 currentTicks;
+		Uint32 prevTicks;
+
+
     public:
         App();
 

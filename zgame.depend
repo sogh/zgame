@@ -392,10 +392,10 @@
 1451208599 c:\projects\git\zgame\log.h
 	<stdio.h>
 
-1451209499 source:c:\projects\git\zgame\app.cpp
+1451210899 source:c:\projects\git\zgame\app.cpp
 	"App.h"
 
-1451209516 c:\projects\git\zgame\app.h
+1451214524 c:\projects\git\zgame\app.h
 	<SDL.h>
 
 1451209156 source:c:\projects\git\zgame\app_cleanup.cpp
@@ -405,12 +405,18 @@
 	"App.h"
 	"Log.h"
 
-1451209150 source:c:\projects\git\zgame\app_loop.cpp
+1451210938 source:c:\projects\git\zgame\app_loop.cpp
 	"App.h"
 
 1451209093 source:c:\projects\git\zgame\app_onevent.cpp
 	"App.h"
 
-1451209150 source:c:\projects\git\zgame\app_render.cpp
+1451210419 source:c:\projects\git\zgame\app_render.cpp
 	"App.h"
+
+1451213707 source:c:\projects\git\zgame\simtime.cpp
+	"SimTime.h"
+
+1451214619 c:\projects\git\zgame\simtime.h
+	<SDL.h>
 

@@ -6,6 +6,8 @@ App::App() {
     this->primarySurface = NULL;
     this->renderer = NULL;
     this->window = NULL;
+    this->prevTicks = -1;
+    this->currentTicks = -1;
 }
 
 int App::Execute() {
