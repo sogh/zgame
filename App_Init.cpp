@@ -1,7 +1,7 @@
-#include "CApp.h"
+#include "App.h"
 #include "Log.h"
 
-bool CApp::OnInit() {
+bool App::Init() {
 
     if(SDL_Init(SDL_INIT_VIDEO) < 0) {
     	Log("Unable to Init SDL: %s", SDL_GetError());
@@ -12,7 +12,7 @@ bool CApp::OnInit() {
         Log("Unable to Init hinting: %s", SDL_GetError());
     }
 
-    if((Window = SDL_CreateWindow(
+    if((this->window = SDL_CreateWindow(
     	"My SDL Game",
     	SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
     	WindowWidth, WindowHeight, SDL_WINDOW_SHOWN)
@@ -21,14 +21,14 @@ bool CApp::OnInit() {
     	return false;
     }
 
-    PrimarySurface = SDL_GetWindowSurface(Window);
+    this->primarySurface = SDL_GetWindowSurface(this->window);
 
-    if((Renderer = SDL_CreateRenderer(Window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
+    if((this->renderer = SDL_CreateRenderer(this->window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
         Log("Unable to create renderer");
         return false;
     }
 
-    SDL_SetRenderDrawColor(Renderer, 0x00, 0x00, 0x00, 0xFF);
+    SDL_SetRenderDrawColor(this->renderer, 0x00, 0x00, 0x00, 0xFF);
 
     return true;
 }

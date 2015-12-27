@@ -379,13 +379,38 @@
 1451207584 source:c:\projects\git\zgame\capp_onevent.cpp
 	"CApp.h"
 
-1451207534 source:c:\projects\git\zgame\capp_oninit.cpp
+1451208667 source:c:\projects\git\zgame\capp_oninit.cpp
 	"CApp.h"
-	<SDL.h>
+	"Log.h"
 
 1451204479 source:c:\projects\git\zgame\capp_onloop.cpp
 	"CApp.h"
 
 1451204484 source:c:\projects\git\zgame\capp_onrender.cpp
 	"CApp.h"
+
+1451208599 c:\projects\git\zgame\log.h
+	<stdio.h>
+
+1451209499 source:c:\projects\git\zgame\app.cpp
+	"App.h"
+
+1451209516 c:\projects\git\zgame\app.h
+	<SDL.h>
+
+1451209156 source:c:\projects\git\zgame\app_cleanup.cpp
+	"App.h"
+
+1451209435 source:c:\projects\git\zgame\app_init.cpp
+	"App.h"
+	"Log.h"
+
+1451209150 source:c:\projects\git\zgame\app_loop.cpp
+	"App.h"
+
+1451209093 source:c:\projects\git\zgame\app_onevent.cpp
+	"App.h"
+
+1451209150 source:c:\projects\git\zgame\app_render.cpp
+	"App.h"
 

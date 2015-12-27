@@ -4,38 +4,38 @@
 #define SDL_MAIN_HANDLED
 #include <SDL.h>
 
-class CApp {
+class App {
     private:
 
-		static CApp Instance;
+		static App instance;
 
-		bool Running = true;
+		bool running;
 
-		SDL_Window* Window = NULL;
-		SDL_Renderer* Renderer = NULL;
-		SDL_Surface* PrimarySurface = NULL;
+		SDL_Window* window;
+		SDL_Renderer* renderer;
+		SDL_Surface* primarySurface;
 
 		static const int WindowWidth = 1024;
 		static const int WindowHeight = 768;
 
     public:
-        CApp();
+        App();
 
-        int OnExecute();
+        int Execute();
 
     public:
 
-        bool OnInit();
+        bool Init();
 
         void OnEvent(SDL_Event* Event);
 
-        void OnLoop();
+        void Loop();
 
-        void OnRender();
+        void Render();
 
-        void OnCleanup();
+        void Cleanup();
 
-		static CApp* GetInstance();
+		static App* GetInstance();
 
 		static int GetWindowWidth() {return WindowWidth;};
 		static int GetWindowHeight() {return WindowHeight;};
